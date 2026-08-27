@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Voix Média Promo 242</title>
-  <meta name="description" content="Voix Média Promo 242 - Promotion, publicité et visibilité pour artistes, marques, entrepreneurs et événements.">
+
+  <meta name="description" content="Voix Média Promo 242 – Promotion, publicité, visibilité et accompagnement des artistes, marques, entrepreneurs et événements.">
 
   <style>
     * {
@@ -36,21 +37,23 @@
     }
 
     .logo {
-      width: 80px;
-      height: 80px;
+      width: 75px;
+      height: 75px;
       object-fit: contain;
       border-radius: 50%;
     }
 
     nav {
       display: flex;
-      gap: 25px;
+      gap: 22px;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
+      font-size: 15px;
       font-weight: bold;
       transition: 0.3s;
     }
@@ -59,26 +62,23 @@
       color: #b000ff;
     }
 
-    section {
-      padding: 90px 8%;
-    }
-
     .hero {
-      min-height: 90vh;
+      min-height: 88vh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 80px 20px;
       background:
-        radial-gradient(circle at center, #250044 0%, #08000f 65%);
+        radial-gradient(circle at top, #5b008f 0%, #180026 35%, #08000f 75%);
     }
 
     .hero-content {
-      max-width: 900px;
+      max-width: 850px;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 8vw, 85px);
+      font-size: clamp(42px, 8vw, 82px);
       line-height: 1.05;
       margin-bottom: 25px;
     }
@@ -88,7 +88,7 @@
     }
 
     .hero p {
-      font-size: 21px;
+      font-size: clamp(18px, 3vw, 25px);
       color: #ddd;
       margin-bottom: 35px;
     }
@@ -115,7 +115,7 @@
     }
 
     .btn-primary:hover {
-      background: #d04cff;
+      background: #d13aff;
       transform: translateY(-3px);
     }
 
@@ -129,36 +129,55 @@
       transform: translateY(-3px);
     }
 
+    section {
+      padding: 90px 7%;
+    }
+
     .section-title {
       text-align: center;
       font-size: 42px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
-    .section-text {
+    .section-title span {
+      color: #b000ff;
+    }
+
+    .section-intro {
       text-align: center;
       color: #ccc;
       max-width: 750px;
-      margin: 0 auto 45px;
+      margin: 0 auto 50px;
+      font-size: 18px;
     }
 
     .about {
-      background: #100019;
+      background: #0d0018;
     }
 
-    .about-box {
+    .about-content {
       max-width: 900px;
       margin: auto;
       text-align: center;
     }
 
-    .about-box h3 {
+    .about-content h3 {
       font-size: 30px;
       margin-bottom: 20px;
       color: #b000ff;
     }
 
-    .services-grid {
+    .about-content p {
+      color: #ddd;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .services {
+      background: #08000f;
+    }
+
+    .service-grid {
       max-width: 1100px;
       margin: auto;
       display: grid;
@@ -166,61 +185,91 @@
       gap: 25px;
     }
 
-    .service {
-      background: #13001d;
-      border: 1px solid #35004d;
-      border-radius: 20px;
-      padding: 35px 25px;
+    .service-card {
+      background: linear-gradient(145deg, #190027, #0d0018);
+      border: 1px solid #3b0066;
+      border-radius: 18px;
+      padding: 30px 25px;
       text-align: center;
       transition: 0.3s;
     }
 
-    .service:hover {
+    .service-card:hover {
       transform: translateY(-8px);
       border-color: #b000ff;
-      box-shadow: 0 10px 30px rgba(176, 0, 255, 0.2);
+      box-shadow: 0 10px 35px rgba(176, 0, 255, 0.18);
     }
 
-    .service .icon {
-      font-size: 45px;
+    .service-icon {
+      font-size: 42px;
       margin-bottom: 15px;
     }
 
-    .service h3 {
-      font-size: 25px;
+    .service-card h3 {
+      font-size: 24px;
       margin-bottom: 12px;
     }
 
-    .service p {
-      color: #bbb;
+    .service-card p {
+      color: #ccc;
     }
 
     .contact {
-      background: #100019;
+      background:
+        radial-gradient(circle at center, #30004d, #08000f 70%);
       text-align: center;
     }
 
     .contact-box {
-      max-width: 700px;
+      max-width: 850px;
       margin: auto;
     }
 
-    .contact-box h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
+    .contact-box p {
+      color: #ddd;
+      font-size: 19px;
+      margin-bottom: 15px;
     }
 
-    .contact-box p {
-      color: #ccc;
-      margin-bottom: 25px;
+    .contact-box h3 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #b000ff;
+    }
+
+    .socials {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social {
+      display: block;
+      min-width: 180px;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background: #13001f;
+      border: 1px solid #3b0066;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      border-color: #b000ff;
+      background: #220033;
+      transform: translateY(-3px);
     }
 
     footer {
       background: #050008;
-      border-top: 1px solid #35004d;
+      border-top: 1px solid #290044;
       text-align: center;
-      padding: 30px 15px;
-      color: #999;
+      padding: 30px 20px;
+      color: #aaa;
     }
 
     footer strong {
@@ -230,24 +279,32 @@
     @media (max-width: 800px) {
       header {
         flex-direction: column;
-        padding: 15px;
+        padding: 15px 5%;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
       }
 
       nav {
-        justify-content: center;
-        gap: 15px;
+        gap: 14px;
       }
 
-      .services-grid {
+      nav a {
+        font-size: 14px;
+      }
+
+      .service-grid {
         grid-template-columns: 1fr;
       }
 
       section {
-        padding: 70px 6%;
+        padding: 70px 5%;
       }
 
-      .hero {
-        min-height: 80vh;
+      .section-title {
+        font-size: 34px;
       }
     }
   </style>
@@ -256,7 +313,11 @@
 <body>
 
   <header>
-    <img src="IMG_1316.png" alt="Voix Média Promo 242" class="logo">
+    <img
+      src="IMG_1316.png"
+      alt="Logo Voix Média Promo 242"
+      class="logo"
+    >
 
     <nav>
       <a href="#accueil">Accueil</a>
@@ -266,8 +327,10 @@
     </nav>
   </header>
 
+
   <main>
 
+    <!-- ACCUEIL -->
     <section class="hero" id="accueil">
       <div class="hero-content">
 
@@ -293,17 +356,22 @@
       </div>
     </section>
 
+
+    <!-- À PROPOS -->
     <section class="about" id="apropos">
-      <div class="about-box">
 
-        <h2 class="section-title">À propos</h2>
+      <div class="about-content">
 
-        <p class="section-text">
+        <h2 class="section-title">
+          À <span>propos</span>
+        </h2>
+
+        <h3>Voix Média Promo 242</h3>
+
+        <p>
           Une plateforme dédiée à la promotion et à la mise en lumière
           des talents, projets, marques et événements.
         </p>
-
-        <h3>Voix Média Promo 242</h3>
 
         <p>
           Nous accompagnons les artistes, entrepreneurs, marques,
@@ -311,71 +379,87 @@
           et toucher davantage de public.
         </p>
 
-        <br>
-
         <p>
           Notre objectif est simple :
           <strong>donner de la force aux projets et faire entendre les voix.</strong>
         </p>
 
       </div>
+
     </section>
 
-    <section id="services">
 
-      <h2 class="section-title">Nos services</h2>
+    <!-- SERVICES -->
+    <section class="services" id="services">
 
-      <p class="section-text">
-        Des solutions pour donner plus de portée et de visibilité à votre projet.
+      <h2 class="section-title">
+        Nos <span>services</span>
+      </h2>
+
+      <p class="section-intro">
+        Des solutions pour donner plus de portée à votre projet
+        et renforcer votre visibilité.
       </p>
 
-      <div class="services-grid">
 
-        <div class="service">
-          <div class="icon">📣</div>
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-icon">📣</div>
           <h3>Promotion</h3>
           <p>
-            Mise en avant de vos sorties, actualités, projets et contenus.
+            Mise en avant de vos sorties, actualités, projets
+            et contenus auprès de notre communauté.
           </p>
         </div>
 
-        <div class="service">
-          <div class="icon">📢</div>
+
+        <div class="service-card">
+          <div class="service-icon">📢</div>
           <h3>Publicité</h3>
           <p>
-            Campagnes pour artistes, marques, commerces, événements et services.
+            Campagnes pour marques, commerces, événements
+            et services souhaitant gagner en visibilité.
           </p>
         </div>
 
-        <div class="service">
-          <div class="icon">🚀</div>
+
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
           <h3>Visibilité</h3>
           <p>
-            Donnez davantage de portée à votre image et touchez un nouveau public.
+            Donnez plus de portée à votre image, votre activité
+            ou votre projet grâce à notre plateforme média.
           </p>
         </div>
 
-        <div class="service">
-          <div class="icon">🎵</div>
+
+        <div class="service-card">
+          <div class="service-icon">🎵</div>
           <h3>Promotion musicale</h3>
           <p>
-            Mise en avant des artistes, singles, albums, clips et projets musicaux.
+            Accompagnement et mise en avant des artistes,
+            singles, clips et projets musicaux.
           </p>
         </div>
 
-        <div class="service">
-          <div class="icon">📱</div>
-          <h3>Réseaux sociaux</h3>
+
+        <div class="service-card">
+          <div class="service-icon">🎬</div>
+          <h3>Contenu média</h3>
           <p>
-            Création et diffusion de contenus pour développer votre présence en ligne.
+            Valorisation de vos contenus et actualités
+            pour toucher davantage de personnes.
           </p>
         </div>
 
-        <div class="service">
-          <div class="icon">🤝</div>
+
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
           <h3>Collaboration</h3>
           <p>
-            Mise en relation et accompagnement pour vos projets et partenariats.
+            Collaborations avec artistes, marques, entrepreneurs
+            et porteurs de projets.
           </p>
         </div>
 
@@ -383,23 +467,84 @@
 
     </section>
 
+
+    <!-- CONTACT -->
     <section class="contact" id="contact">
 
       <div class="contact-box">
 
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">
+          <span>Contact</span>
+        </h2>
 
         <p>
           Vous avez un projet, une sortie musicale, une marque,
           un événement ou une publicité à promouvoir ?
         </p>
 
-        <h3>Travaillons ensemble.</h3>
+        <h3>
+          Travaillons ensemble.
+        </h3>
+
 
         <div class="buttons">
-          <a href="https://wa.me/" class="btn btn-primary">
-            Nous contacter sur WhatsApp
+
+          <a
+            href="https://wa.me/24265826884"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            WhatsApp
           </a>
+
+          <a
+            href="https://www.tiktok.com/@voixcongo242"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            TikTok
+          </a>
+
+          <a
+            href="https://www.instagram.com/voixmedia242"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            Instagram
+          </a>
+
+        </div>
+
+
+        <div class="socials">
+
+          <a
+            href="https://www.tiktok.com/@voixcongo242"
+            class="social"
+            target="_blank"
+          >
+            🎵 TikTok<br>
+            @voixcongo242
+          </a>
+
+          <a
+            href="https://www.instagram.com/voixmedia242"
+            class="social"
+            target="_blank"
+          >
+            📸 Instagram<br>
+            @voixmedia242
+          </a>
+
+          <a
+            href="https://wa.me/24265826884"
+            class="social"
+            target="_blank"
+          >
+            💬 WhatsApp<br>
+            065 826 884
+          </a>
+
         </div>
 
       </div>
@@ -408,8 +553,12 @@
 
   </main>
 
+
   <footer>
-    © 2026 <strong>Voix Média Promo 242</strong> — Tous droits réservés.
+    <p>
+      © 2026 <strong>Voix Média Promo 242</strong> —
+      Tous droits réservés.
+    </p>
   </footer>
 
 </body>
