@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administration - Voix Média Promo 242</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050806;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    background: #08120c;
+    border-bottom: 1px solid #294b31;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    width: 80px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header span {
+    color: #b7f23a;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 15px 60px;
+}
+
+.card {
+    background: #0c120e;
+    border: 1px solid #294b31;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+h2 span {
+    color: #b7f23a;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #cbd4ce;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #34563b;
+    background: #070b08;
+    color: white;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 18px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #b7f23a;
+    color: #07110d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.logout {
+    background: transparent;
+    border: 1px solid #b7f23a;
+    color: #b7f23a;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    margin-top: 15px;
+    color: #b7f23a;
+}
+
+.warning {
+    color: #ffcc66;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.stat {
+    background: #111b14;
+    border: 1px solid #294b31;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 30px;
+    color: #b7f23a;
+    margin-bottom: 5px;
+}
+
+.back {
+    color: #b7f23a;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <img src="IMG_1316.png" alt="Voix Média Promo 242">
+
+    <h1>
+        Administration
+        <span>Voix Média Promo 242</span>
+    </h1>
+
+</header>
+
+
+<div class="container">
+
+    <!-- CONNEXION -->
+    <div id="login" class="card">
+
+        <h2>🔐 Accès <span>administrateur</span></h2>
+
+        <p>
+            Cette page est destinée à la gestion de la plateforme.
+        </p>
+
+        <label for="password">
+            Mot de passe administrateur
+        </label>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Votre mot de passe">
+
+        <button onclick="login()">
+            Se connecter
+        </button>
+
+        <div id="loginMessage" class="message"></div>
+
+        <p class="warning">
+            Pour une vraie sécurité, l'authentification définitive
+            devra être connectée à un système serveur sécurisé.
+        </p>
+
+    </div>
+
+
+    <!-- TABLEAU DE BORD -->
+    <div id="dashboard" class="hidden">
+
+        <div class="card">
+
+            <h2>
+                Tableau de <span>bord</span>
+            </h2>
+
+            <div class="dashboard">
+
+                <div class="stat">
+                    <strong id="clipCount">0</strong>
+                    Extraits
+                </div>
+
+                <div class="stat">
+                    <strong id="eventCount">0</strong>
+                    Événements
+                </div>
+
+                <div class="stat">
+                    <strong>4 000</strong>
+                    FCFA / mois
+                </div>
+
+            </div>
+
+            <button
+                class="logout"
+                onclick="logout()">
+                Se déconnecter
+            </button>
+
+        </div>
+
+
+        <!-- AJOUT EXTRAIT -->
+        <div class="card">
+
+            <h2>
+                🎬 Ajouter un <span>extrait</span>
+            </h2>
+
+            <label>
+                Nom de l'artiste
+            </label>
+
+            <input
+                id="artist"
+                type="text"
+                placeholder="Exemple : Petit Fukuchima">
+
+            <label>
+                Titre du morceau
+            </label>
+
+            <input
+                id="song"
+                type="text"
+                placeholder="Exemple : Reconnaissance">
+
+            <label>
+                Lien de la vidéo
+            </label>
+
+            <input
+                id="video"
+                type="url"
+                placeholder="Lien de la vidéo">
+
+            <button onclick="addClip()">
+                Ajouter l'extrait
+            </button>
+
+            <div id="clipMessage" class="message"></div>
+
+        </div>
+
+
+        <!-- AJOUT EVENEMENT -->
+        <div class="card">
+
+            <h2>
+                📅 Ajouter un <span>événement</span>
+            </h2>
+
+            <label>
+                Nom de l'événement
+            </label>
+
+            <input
+                id="eventName"
+                type="text"
+                placeholder="Nom de l'événement">
+
+            <label>
+                Date
+            </label>
+
+            <input
+                id="eventDate"
+                type="date">
+
+            <label>
+                Heure
+            </label>
+
+            <input
+                id="eventTime"
+                type="time">
+
+            <label>
+                Lieu
+            </label>
+
+            <input
+                id="eventPlace"
+                type="text"
+                placeholder="Brazzaville">
+
+            <label>
+                Description
+            </label>
+
+            <textarea
+                id="eventDescription"
+                placeholder="Description de l'événement">
+            </textarea>
+
+            <button onclick="addEvent()">
+                Ajouter l'événement
+            </button>
+
+            <div id="eventMessage" class="message"></div>
+
+        </div>
+
+
+        <!-- TARIF -->
+        <div class="card">
+
+            <h2>
+                💰 Tarif de <span>promotion</span>
+            </h2>
+
+            <label>
+                Prix mensuel en FCFA
+            </label>
+
+            <input
+                id="price"
+                type="number"
+                value="4000">
+
+            <button onclick="savePrice()">
+                Enregistrer le tarif
+            </button>
+
+            <div id="priceMessage" class="message"></div>
+
+        </div>
+
+
+        <a href="index.html" class="back">
+            ← Retour au site
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/*
+    IMPORTANT :
+    Ceci est une première interface.
+    Le mot de passe ci-dessous n'est PAS une sécurité réelle.
+    Il sera remplacé par une authentification serveur.
+*/
+
+const ADMIN_PASSWORD = "242admin";
+
+let clips =
+    JSON.parse(localStorage.getItem("voix_clips") || "[]");
+
+let events =
+    JSON.parse(localStorage.getItem("voix_events") || "[]");
+
+
+function login() {
+
+    const password =
+        document.getElementById("password").value;
+
+    const message =
+        document.getElementById("loginMessage");
+
+    if (password === ADMIN_PASSWORD) {
+
+        localStorage.setItem(
+            "voix_admin",
+            "connected"
+        );
+
+        showDashboard();
+
+    } else {
+
+        message.textContent =
+            "Mot de passe incorrect.";
+
+    }
+}
+
+
+function showDashboard() {
+
+    document
+        .getElementById("login")
+        .classList.add("hidden");
+
+    document
+        .getElementById("dashboard")
+        .classList.remove("hidden");
+
+    updateStats();
+}
+
+
+function logout() {
+
+    localStorage.removeItem("voix_admin");
+
+    document
+        .getElementById("dashboard")
+        .classList.add("hidden");
+
+    document
+        .getElementById("login")
+        .classList.remove("hidden");
+
+}
+
+
+function updateStats() {
+
+    document.getElementById("clipCount")
+        .textContent = clips.length;
+
+    document.getElementById("eventCount")
+        .textContent = events.length;
+
+}
+
+
+function addClip() {
+
+    const artist =
+        document.getElementById("artist").value.trim();
+
+    const song =
+        document.getElementById("song").value.trim();
+
+    const video =
+        document.getElementById("video").value.trim();
+
+    if (!artist || !song || !video) {
+
+        document.getElementById("clipMessage")
+            .textContent =
+            "Remplis tous les champs.";
+
+        return;
+    }
+
+    clips.push({
+        artist: artist,
+        song: song,
+        video: video,
+        date: new Date().toISOString()
+    });
+
+    localStorage.setItem(
+        "voix_clips",
+        JSON.stringify(clips)
+    );
+
+    document.getElementById("clipMessage")
+        .textContent =
+        "Extrait ajouté.";
+
+    document.getElementById("artist").value = "";
+    document.getElementById("song").value = "";
+    document.getElementById("video").value = "";
+
+    updateStats();
+}
+
+
+function addEvent() {
+
+    const name =
+        document.getElementById("eventName").value.trim();
+
+    const date =
+        document.getElementById("eventDate").value;
+
+    const time =
+        document.getElementById("eventTime").value;
+
+    const place =
+        document.getElementById("eventPlace").value.trim();
+
+    const description =
+        document.getElementById("eventDescription").value.trim();
+
+    if (!name || !date || !place) {
+
+        document.getElementById("eventMessage")
+            .textContent =
+            "Remplis les informations principales.";
+
+        return;
+    }
+
+    events.push({
+        name: name,
+        date: date,
+        time: time,
+        place: place,
+        description: description
+    });
+
+    localStorage.setItem(
+        "voix_events",
+        JSON.stringify(events)
+    );
+
+    document.getElementById("eventMessage")
+        .textContent =
+        "Événement ajouté.";
+
+    updateStats();
+}
+
+
+function savePrice() {
+
+    const price =
+        document.getElementById("price").value;
+
+    localStorage.setItem(
+        "voix_price",
+        price
+    );
+
+    document.getElementById("priceMessage")
+        .textContent =
+        "Tarif enregistré : " + price + " FCFA / mois.";
+}
+
+
+if (
+    localStorage.getItem("voix_admin")
+    === "connected"
+) {
+
+    showDashboard();
+
+}
+
+</script>
+
+</body>
+</html>
