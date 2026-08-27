@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,339 +5,277 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Voix Média Promo 242</title>
-
-<meta name="description" content="Voix Média Promo 242 — Promotion, publicité, visibilité et collaboration au Congo.">
+<meta name="description" content="Voix Média Promo 242 - Promotion, publicité, visibilité et collaboration.">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #080808;
-  color: #fff;
-  line-height: 1.6;
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#070707;
+  color:white;
+  line-height:1.6;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(8,5,12,.96);
+  border-bottom:1px solid #29212f;
+  padding:20px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-/* NAVIGATION */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 76px;
-  background: rgba(8, 8, 8, 0.95);
-  border-bottom: 1px solid #222;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  z-index: 1000;
+.logo{
+  font-size:25px;
+  font-weight:bold;
 }
 
-.logo {
-  font-size: 27px;
-  font-weight: 800;
+.logo span{
+  color:#a100ff;
 }
 
-.logo span {
-  color: #a100ff;
+nav{
+  display:flex;
+  gap:30px;
 }
 
-.menu {
-  display: flex;
-  gap: 38px;
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:16px;
 }
 
-.menu a {
-  font-size: 17px;
-  color: #ddd;
-  transition: 0.3s;
+nav a:hover{
+  color:#b000ff;
 }
 
-.menu a:hover {
-  color: #a100ff;
+.hero{
+  min-height:88vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:60px 20px;
+  background:
+    radial-gradient(circle at 50% 40%,#8b00ff 0%,#4b00a8 35%,#10001c 75%,#070707 100%);
 }
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  padding: 150px 20px 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(120deg, #33006b, #8500ff, #c000ff);
+.hero-content{
+  max-width:900px;
 }
 
-.hero-content {
-  max-width: 950px;
+.hero h1{
+  font-size:clamp(48px,9vw,100px);
+  line-height:1;
+  margin-bottom:25px;
 }
 
-.hero h1 {
-  font-size: clamp(55px, 9vw, 105px);
-  line-height: 0.98;
-  font-weight: 900;
-  margin-bottom: 35px;
+.hero h1 span{
+  color:#ffe600;
 }
 
-.hero h1 .white {
-  color: white;
-  display: block;
+.hero p{
+  font-size:clamp(20px,3vw,30px);
+  margin-bottom:40px;
 }
 
-.hero h1 .yellow {
-  color: #fff000;
-  display: block;
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
 }
 
-.hero p {
-  font-size: clamp(22px, 3vw, 32px);
-  margin-bottom: 45px;
+.btn{
+  display:inline-block;
+  padding:16px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.btn-primary{
+  background:white;
+  color:#7600d9;
 }
 
-.btn {
-  display: inline-block;
-  padding: 18px 35px;
-  border-radius: 40px;
-  font-size: 19px;
-  font-weight: bold;
-  transition: 0.3s;
+.btn-secondary{
+  border:2px solid white;
+  color:white;
 }
 
-.btn-primary {
-  background: white;
-  color: #7900ff;
+.btn:hover{
+  transform:translateY(-3px);
 }
 
-.btn-secondary {
-  border: 3px solid white;
-  color: white;
+section{
+  padding:90px 6%;
+  max-width:1200px;
+  margin:auto;
 }
 
-.btn:hover {
-  transform: translateY(-4px);
-  opacity: 0.9;
+.section-title{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:15px;
 }
 
-/* SECTIONS */
-section {
-  padding: 110px 7%;
-  text-align: center;
+.section-subtitle{
+  text-align:center;
+  color:#aaa;
+  margin-bottom:50px;
+  font-size:18px;
 }
 
-section h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.about-box{
+  background:#111;
+  border:1px solid #302637;
+  border-radius:20px;
+  padding:40px;
+  text-align:center;
+  max-width:850px;
+  margin:auto;
 }
 
-.section-intro {
-  max-width: 850px;
-  margin: 0 auto 55px;
-  color: #aaa;
-  font-size: 21px;
+.about-box p{
+  color:#ccc;
+  font-size:18px;
+  margin-top:15px;
 }
 
-/* À PROPOS */
-.about {
-  background: #0d0d0d;
+.services{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
 }
 
-.about-box {
-  max-width: 950px;
-  margin: auto;
-  background: #151515;
-  border: 1px solid #292929;
-  border-radius: 25px;
-  padding: 45px;
+.card{
+  background:linear-gradient(145deg,#151515,#0c0c0c);
+  border:1px solid #302637;
+  border-radius:20px;
+  padding:30px;
+  transition:.3s;
 }
 
-.about-box p {
-  color: #ccc;
-  font-size: 19px;
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#9b00ff;
 }
 
-/* SERVICES */
-.services {
-  background: #080808;
+.card .icon{
+  font-size:40px;
+  margin-bottom:10px;
 }
 
-.service-grid {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+.card h3{
+  font-size:24px;
+  margin-bottom:10px;
 }
 
-.service-card {
-  background: #151515;
-  border: 1px solid #292929;
-  border-radius: 22px;
-  padding: 35px 25px;
-  transition: 0.3s;
+.card p{
+  color:#aaa;
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  border-color: #9b00ff;
+.contact-box{
+  background:#111;
+  border:1px solid #302637;
+  border-radius:25px;
+  padding:45px 25px;
+  text-align:center;
 }
 
-.service-icon {
-  font-size: 42px;
-  margin-bottom: 15px;
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:30px;
 }
 
-.service-card h3 {
-  font-size: 27px;
-  margin-bottom: 10px;
+.social{
+  padding:15px 25px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  border:1px solid #444;
+  background:#1b1b1b;
 }
 
-.service-card p {
-  color: #aaa;
+.social:hover{
+  border-color:#a100ff;
+  transform:translateY(-2px);
 }
 
-/* CONTACT */
-.contact {
-  background: #0b0b0b;
+footer{
+  border-top:1px solid #222;
+  text-align:center;
+  padding:35px 20px;
+  color:#777;
 }
 
-.contact-box {
-  max-width: 1100px;
-  margin: auto;
-  background: #151515;
-  border: 1px solid #292929;
-  border-radius: 25px;
-  padding: 50px 30px;
+footer strong{
+  color:white;
 }
 
-.contact-box h3 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
+@media(max-width:700px){
 
-.contact-box > p {
-  color: #aaa;
-  font-size: 19px;
-  margin-bottom: 35px;
-}
-
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.contact-btn {
-  padding: 17px 25px;
-  border-radius: 15px;
-  background: #202020;
-  border: 1px solid #383838;
-  color: white;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.contact-btn:hover {
-  transform: translateY(-4px);
-  border-color: #a100ff;
-  background: #292929;
-}
-
-.whatsapp:hover {
-  border-color: #25d366;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 35px 20px;
-  background: #050505;
-  border-top: 1px solid #1d1d1d;
-  color: #777;
-}
-
-footer strong {
-  color: white;
-}
-
-.footer-line {
-  margin-top: 8px;
-}
-
-/* MOBILE */
-@media (max-width: 700px) {
-  nav {
-    height: auto;
-    min-height: 70px;
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 12px;
+  header{
+    padding:17px 20px;
   }
 
-  .logo {
-    font-size: 23px;
+  .logo{
+    font-size:19px;
   }
 
-  .menu {
-    gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
+  nav{
+    gap:13px;
   }
 
-  .menu a {
-    font-size: 14px;
+  nav a{
+    font-size:13px;
   }
 
-  .hero {
-    padding-top: 160px;
+  .hero{
+    min-height:80vh;
   }
 
-  .hero h1 {
-    font-size: 55px;
+  .hero h1{
+    font-size:52px;
   }
 
-  .hero p {
-    font-size: 20px;
+  .hero p{
+    font-size:19px;
   }
 
-  .btn {
-    width: 100%;
-    max-width: 330px;
+  section{
+    padding:65px 20px;
   }
 
-  section {
-    padding: 85px 20px;
+  .section-title{
+    font-size:36px;
   }
 
-  section h2 {
-    font-size: 38px;
+  .services{
+    grid-template-columns:1fr;
   }
 
-  .service-grid {
-    grid-template-columns: 1fr;
+  .about-box{
+    padding:28px 20px;
   }
 
-  .about-box,
-  .contact-box {
-    padding: 30px 20px;
+  .btn{
+    width:100%;
   }
 }
 </style>
@@ -346,27 +283,25 @@ footer strong {
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#accueil" class="logo">
-    Voix Média <span>Promo 242</span>
-  </a>
+<header>
+  <div class="logo">Voix Média <span>Promo 242</span></div>
 
-  <div class="menu">
+  <nav>
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<!-- ACCUEIL -->
-<section id="accueil" class="hero">
+<main>
+
+<section class="hero" id="accueil">
   <div class="hero-content">
 
     <h1>
-      <span class="white">Voix Média</span>
-      <span class="yellow">Promo 242</span>
+      Voix Média<br>
+      <span>Promo 242</span>
     </h1>
 
     <p>
@@ -386,72 +321,76 @@ footer strong {
   </div>
 </section>
 
-<!-- À PROPOS -->
-<section id="apropos" class="about">
+<section id="apropos">
 
-  <h2>À propos</h2>
+  <h2 class="section-title">À propos</h2>
 
-  <p class="section-intro">
-    Une plateforme dédiée à la promotion et à la mise en lumière des talents et des projets.
+  <p class="section-subtitle">
+    Une plateforme dédiée à la promotion et à la mise en lumière des talents.
   </p>
 
   <div class="about-box">
-    <p>
-      <strong>Voix Média Promo 242</strong> accompagne les artistes,
-      entrepreneurs, marques, événements et projets qui souhaitent
-      développer leur visibilité et toucher davantage de public.
-    </p>
 
-    <br>
+    <h2>Voix Média Promo 242</h2>
 
     <p>
-      Notre objectif est de donner de la force aux projets à travers
-      la promotion, la publicité, la visibilité et les collaborations.
+      Nous accompagnons les artistes, entrepreneurs, marques,
+      événements et projets qui souhaitent développer leur visibilité
+      et toucher davantage de public.
     </p>
+
+    <p>
+      Notre objectif est simple :
+      <strong>donner de la force aux projets et faire entendre les voix.</strong>
+    </p>
+
   </div>
 
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="services">
+<section id="services">
 
-  <h2>Nos services</h2>
+  <h2 class="section-title">Nos services</h2>
 
-  <p class="section-intro">
+  <p class="section-subtitle">
     Des solutions pour donner plus de portée à votre projet.
   </p>
 
-  <div class="service-grid">
+  <div class="services">
 
-    <div class="service-card">
-      <div class="service-icon">📣</div>
+    <div class="card">
+      <div class="icon">📣</div>
       <h3>Promotion</h3>
       <p>
-        Mise en avant de vos sorties, actualités, projets et contenus.
+        Mise en avant de vos sorties, actualités,
+        projets et contenus.
       </p>
     </div>
 
-    <div class="service-card">
-      <div class="service-icon">📢</div>
+    <div class="card">
+      <div class="icon">📢</div>
       <h3>Publicité</h3>
       <p>
-        Campagnes pour marques, commerces, événements et services.
+        Campagnes pour marques, commerces,
+        événements et services.
       </p>
     </div>
 
-    <div class="service-card">
-      <div class="service-icon">🚀</div>
+    <div class="card">
+      <div class="icon">🚀</div>
       <h3>Visibilité</h3>
       <p>
-        Développez votre image et votre présence auprès du public.
+        Développez votre image et votre présence
+        auprès du public.
       </p>
     </div>
 
-    <div class="service-card">
-      <div class="service-icon">🤝</div>
+    <div class="card">
+      <div class="icon">🤝</div>
       <h3>Collaboration</h3>
       <p>
-        Partenariats médias et collaborations autour de projets impactants.
+        Collaborations médias et partenariats
+        autour de projets.
       </p>
     </div>
 
@@ -459,53 +398,43 @@ footer strong {
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
+<section id="contact">
 
-  <h2>Contact</h2>
+  <h2 class="section-title">Contact</h2>
 
-  <p class="section-intro">
+  <p class="section-subtitle">
     Vous avez un projet à mettre en lumière ?
   </p>
 
   <div class="contact-box">
 
-    <h3>Voix Média Promo 242</h3>
+    <h2>Voix Média Promo 242</h2>
 
     <p>
-      Pour toute demande de promotion, publicité,
-      collaboration ou partenariat.
+      Pour toute demande de promotion,
+      publicité, collaboration ou partenariat.
     </p>
 
     <div class="contact-buttons">
 
-      <!-- WHATSAPP -->
       <a
-        class="contact-btn whatsapp"
-        href="https://wa.me/24265826884?text=Bonjour%20Voix%20Média%20Promo%20242%2C%20je%20souhaite%20vous%20contacter%20pour%20un%20projet."
-        target="_blank"
-        rel="noopener"
-      >
+        class="social"
+        href="https://wa.me/24265826884"
+        target="_blank">
         💬 WhatsApp
       </a>
 
-      <!-- TIKTOK -->
       <a
-        class="contact-btn"
+        class="social"
         href="https://www.tiktok.com/@voixcongo242"
-        target="_blank"
-        rel="noopener"
-      >
+        target="_blank">
         🎵 TikTok
       </a>
 
-      <!-- INSTAGRAM -->
       <a
-        class="contact-btn"
+        class="social"
         href="https://www.instagram.com/reel/DcbQkyGMJJV/?igsi=cGQ1N2ltbXBjeWQ0"
-        target="_blank"
-        rel="noopener"
-      >
+        target="_blank">
         📸 Instagram
       </a>
 
@@ -515,19 +444,13 @@ footer strong {
 
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-
-  <div>
-    © 2026 <strong>Voix Média Promo 242</strong> — Tous droits réservés.
-  </div>
-
-  <div class="footer-line">
-    Promotion • Publicité • Visibilité • Collaboration
-  </div>
-
+  © 2026 <strong>Voix Média Promo 242</strong> — Tous droits réservés.
+  <br>
+  Promotion • Publicité • Visibilité • Collaboration
 </footer>
 
 </body>
 </html>
-`
