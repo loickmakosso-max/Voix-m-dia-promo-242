@@ -7,297 +7,483 @@
 <title>Voix Média Promo 242</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#050806;
-color:#fff;
-line-height:1.5;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#050806;
+  color:#fff;
+  line-height:1.5;
 }
+
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(5,8,6,.97);
-border-bottom:1px solid #24452d;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(5,8,6,.97);
+  border-bottom:1px solid #24452d;
 }
+
 .header{
-max-width:1100px;
-margin:auto;
-padding:10px 18px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:15px;
+  max-width:1100px;
+  margin:auto;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
 }
-.logo{width:82px;height:auto;display:block}
-nav{display:flex;gap:14px;overflow-x:auto}
+
+.logo{
+  width:75px;
+  height:auto;
+}
+
+nav{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+}
+
 nav a{
-color:#fff;
-text-decoration:none;
-font-size:13px;
-font-weight:bold;
-white-space:nowrap;
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:bold;
+  white-space:nowrap;
 }
-nav a:hover{color:#b7f23a}
+
+nav a:hover{
+  color:#b7f23a;
+}
+
+/* ACCUEIL */
 
 .hero{
-min-height:620px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:55px 20px;
-background:
-radial-gradient(circle at 50% 10%,rgba(120,220,50,.22),transparent 40%),
-linear-gradient(#0a160e,#050806);
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:50px 18px;
+  background:
+  radial-gradient(circle at 50% 10%,rgba(120,220,50,.22),transparent 40%),
+  linear-gradient(#0a160e,#050806);
 }
-.hero-content{max-width:720px}
-.hero-logo{width:210px;max-width:75%;margin-bottom:25px}
+
+.hero-content{
+  max-width:720px;
+}
+
+.hero-logo{
+  width:220px;
+  max-width:75%;
+  margin-bottom:25px;
+}
+
 .hero h1{
-font-size:clamp(38px,9vw,72px);
-line-height:1;
-margin-bottom:18px;
+  font-size:clamp(40px,10vw,75px);
+  line-height:1;
+  margin-bottom:18px;
 }
-.hero h1 span{color:#b7f23a;display:block}
+
+.hero h1 span{
+  color:#b7f23a;
+  display:block;
+}
+
 .hero p{
-font-size:18px;
-color:#c1cbc4;
-margin-bottom:28px;
+  color:#c1cbc4;
+  font-size:18px;
+  margin-bottom:28px;
 }
+
 .buttons{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:12px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
 }
+
 .btn{
-display:inline-block;
-border:none;
-cursor:pointer;
-padding:14px 22px;
-border-radius:30px;
-font-weight:bold;
-text-decoration:none;
-transition:.2s;
+  display:inline-block;
+  border:none;
+  cursor:pointer;
+  padding:14px 22px;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
 }
-.btn:hover{transform:translateY(-2px)}
-.primary{background:#b7f23a;color:#07100b}
-.secondary{border:1px solid #52704e;color:#fff;background:transparent}
+
+.primary{
+  background:#b7f23a;
+  color:#07100b;
+}
+
+.secondary{
+  border:1px solid #52704e;
+  color:#fff;
+  background:transparent;
+}
+
+/* SECTIONS */
 
 section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:60px 18px;
 }
+
 .title{
-font-size:32px;
-margin-bottom:8px;
+  font-size:32px;
+  margin-bottom:8px;
 }
-.title span{color:#b7f23a}
+
+.title span{
+  color:#b7f23a;
+}
+
 .desc{
-color:#aeb9b1;
-margin-bottom:28px;
+  color:#aeb9b1;
+  margin-bottom:28px;
 }
 
 /* CARTES */
+
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
 }
+
 .card{
-background:#0b120e;
-border:1px solid #24452d;
-border-radius:18px;
-overflow:hidden;
+  background:#0b120e;
+  border:1px solid #24452d;
+  border-radius:18px;
+  overflow:hidden;
 }
-.card-content{padding:18px}
-.card h3{margin-bottom:7px}
-.card p{color:#aeb9b1;font-size:14px}
+
+.card-content{
+  padding:18px;
+}
+
+.card h3{
+  margin-bottom:7px;
+}
+
+.card p{
+  color:#aeb9b1;
+  font-size:14px;
+}
 
 /* CLIPS */
-.clip-video{
-width:100%;
-aspect-ratio:9/16;
-background:#000;
-display:block;
-object-fit:cover;
+
+.clip{
+  position:relative;
+  background:#000;
 }
+
+.clip-video{
+  width:100%;
+  aspect-ratio:9/16;
+  display:block;
+  object-fit:cover;
+  background:#050505;
+}
+
 .clip-placeholder{
-aspect-ratio:9/16;
-background:linear-gradient(145deg,#18291c,#070b08);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:55px;
-color:#b7f23a;
+  width:100%;
+  aspect-ratio:9/16;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+  linear-gradient(145deg,#18291c,#070b08);
+  color:#b7f23a;
+  font-size:55px;
+}
+
+.clip-info{
+  padding:16px;
+}
+
+.clip-info h3{
+  margin-bottom:4px;
+}
+
+.clip-info p{
+  margin-bottom:14px;
+}
+
+/* STATS */
+
+.stats{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
+.stat{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#aeb9b1;
+  font-size:14px;
+}
+
+.like-btn{
+  border:1px solid #394d3d;
+  background:#111a14;
+  color:#fff;
+  border-radius:25px;
+  padding:8px 13px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.like-btn:hover{
+  border-color:#b7f23a;
+}
+
+.like-btn.liked{
+  background:#b7f23a;
+  color:#07100b;
+  border-color:#b7f23a;
+}
+
+.like-count,
+.view-count{
+  color:#b7f23a;
+  font-weight:bold;
 }
 
 /* ARTISTES */
+
 .artist{
-padding:25px;
-text-align:center;
+  padding:25px;
+  text-align:center;
 }
+
 .artist-icon{
-width:90px;
-height:90px;
-margin:0 auto 15px;
-border-radius:50%;
-background:#152319;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:35px;
-border:2px solid #395d3c;
+  width:90px;
+  height:90px;
+  margin:0 auto 15px;
+  border-radius:50%;
+  background:#152319;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:35px;
+  border:2px solid #395d3c;
 }
 
 /* EVENEMENTS */
+
 .event{
-padding:22px;
+  padding:22px;
 }
+
 .event-date{
-color:#b7f23a;
-font-weight:bold;
-font-size:14px;
-margin-bottom:7px;
+  color:#b7f23a;
+  font-weight:bold;
+  font-size:14px;
+  margin-bottom:7px;
 }
+
 .event-location{
-color:#9eaaa2;
-margin:8px 0 15px;
+  color:#9eaaa2;
+  margin:8px 0 15px;
 }
 
 /* PROMOTION */
+
 .promo{
-background:linear-gradient(135deg,#102719,#07100b);
-border:1px solid #426640;
-border-radius:24px;
-padding:35px 25px;
+  background:linear-gradient(135deg,#102719,#07100b);
+  border:1px solid #426640;
+  border-radius:24px;
+  padding:35px 25px;
 }
+
 .price{
-font-size:43px;
-font-weight:bold;
-color:#b7f23a;
-margin:18px 0;
+  font-size:43px;
+  font-weight:bold;
+  color:#b7f23a;
+  margin:18px 0;
 }
+
 .price small{
-font-size:15px;
-color:#aeb9b1;
-font-weight:normal;
+  font-size:15px;
+  color:#aeb9b1;
+  font-weight:normal;
 }
+
 .promo ul{
-list-style:none;
-margin:20px 0 25px;
+  list-style:none;
+  margin:20px 0 25px;
 }
+
 .promo li{
-margin:10px 0;
-color:#d1d9d3;
+  margin:10px 0;
+  color:#d1d9d3;
 }
+
 .promo li::before{
-content:"✓";
-color:#b7f23a;
-font-weight:bold;
-margin-right:9px;
+  content:"✓";
+  color:#b7f23a;
+  font-weight:bold;
+  margin-right:9px;
 }
 
 /* REFERENCES */
+
 .reference{
-padding:24px;
+  padding:24px;
 }
+
 .reference strong{
-display:block;
-font-size:17px;
-color:#b7f23a;
-margin-bottom:7px;
+  display:block;
+  color:#b7f23a;
+  margin-bottom:7px;
 }
 
 /* ABONNEMENT */
+
 .subscribe{
-text-align:center;
-background:#0b120e;
-border:1px solid #24452d;
-border-radius:24px;
-padding:40px 20px;
+  text-align:center;
+  background:#0b120e;
+  border:1px solid #24452d;
+  border-radius:24px;
+  padding:40px 20px;
 }
+
 .subscribe p{
-max-width:650px;
-margin:10px auto 25px;
-color:#aeb9b1;
+  max-width:650px;
+  margin:10px auto 25px;
+  color:#aeb9b1;
 }
+
 #message{
-margin-top:15px;
-color:#b7f23a;
+  margin-top:15px;
+  color:#b7f23a;
 }
 
 /* CONTACT */
+
 .contact{
-text-align:center;
-background:linear-gradient(135deg,#15351f,#08110c);
-border-radius:24px;
-padding:40px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#15351f,#08110c);
+  border-radius:24px;
+  padding:40px 20px;
 }
+
 .whatsapp{
-display:inline-block;
-margin-top:20px;
-padding:15px 25px;
-border-radius:30px;
-background:#25d366;
-color:white;
-text-decoration:none;
-font-weight:bold;
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 25px;
+  border-radius:30px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* ADMIN */
+
 .admin{
-text-align:center;
-padding-top:20px;
+  text-align:center;
+  padding:20px;
 }
+
 .admin a{
-color:#b7f23a;
-text-decoration:none;
-font-weight:bold;
+  color:#b7f23a;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* FOOTER */
+
 footer{
-border-top:1px solid #24452d;
-text-align:center;
-padding:35px 15px;
-color:#87928a;
+  border-top:1px solid #24452d;
+  text-align:center;
+  padding:35px 15px;
+  color:#87928a;
 }
+
 .footer-logo{
-width:95px;
-margin-bottom:15px;
+  width:95px;
+  margin-bottom:15px;
 }
+
 .socials{
-display:flex;
-justify-content:center;
-gap:10px;
-flex-wrap:wrap;
-margin:18px 0;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:18px 0;
 }
+
 .socials a{
-color:#fff;
-text-decoration:none;
-border:1px solid #294833;
-border-radius:20px;
-padding:9px 14px;
-font-size:13px;
+  color:#fff;
+  text-decoration:none;
+  border:1px solid #294833;
+  border-radius:20px;
+  padding:9px 14px;
+  font-size:13px;
 }
 
 /* MOBILE */
+
 @media(max-width:650px){
-.header{padding:8px 12px}
-.logo{width:65px}
-nav{gap:10px}
-nav a{font-size:10px}
-.hero{min-height:650px;padding:45px 15px}
-.hero-logo{width:175px}
-.hero p{font-size:16px}
-section{padding:50px 15px}
-.title{font-size:28px}
-.grid{grid-template-columns:1fr}
+
+  .header{
+    padding:8px 12px;
+  }
+
+  .logo{
+    width:62px;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a{
+    font-size:10px;
+  }
+
+  .hero{
+    min-height:650px;
+  }
+
+  .hero-logo{
+    width:175px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:50px 15px;
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -305,6 +491,7 @@ section{padding:50px 15px}
 <body>
 
 <header>
+
 <div class="header">
 
 <a href="#accueil">
@@ -316,19 +503,23 @@ section{padding:50px 15px}
 <a href="#clips">Clips</a>
 <a href="#artistes">Artistes</a>
 <a href="#evenements">Événements</a>
-<a href="#references">Références</a>
+<a href="#promotion">Promotion</a>
 </nav>
 
 </div>
+
 </header>
 
 
 <!-- ACCUEIL -->
+
 <section class="hero" id="accueil">
 
 <div class="hero-content">
 
-<img src="IMG_1316.png" class="hero-logo" alt="Voix Média Promo 242">
+<img src="IMG_1316.png"
+     class="hero-logo"
+     alt="Voix Média Promo 242">
 
 <h1>
 VOIX MÉDIA
@@ -336,125 +527,263 @@ VOIX MÉDIA
 </h1>
 
 <p>
-La vitrine des artistes, des événements et des projets
-qui font bouger le 242.
+La vitrine des artistes, des extraits de clips
+et des événements qui font bouger le 242.
 </p>
 
 <div class="buttons">
-<a href="#clips" class="btn primary">Voir les extraits</a>
-<a href="#promotion" class="btn secondary">Promouvoir mon événement</a>
+
+<a href="#clips" class="btn primary">
+Voir les extraits
+</a>
+
+<a href="#promotion" class="btn secondary">
+Promouvoir mon événement
+</a>
+
 </div>
 
 </div>
+
 </section>
 
 
-<!-- EXTRAITS -->
+<!-- EXTRAITS DE CLIPS -->
+
 <section id="clips">
 
-<h2 class="title">Extraits de <span>clips vidéo</span></h2>
+<h2 class="title">
+Extraits de <span>clips</span>
+</h2>
 
 <p class="desc">
 Découvrez les extraits de clips sélectionnés et publiés
 par Voix Média Promo 242.
 </p>
 
+
 <div class="grid">
 
-<article class="card">
+
+<!-- PUBLICATION 1 -->
+
+<article class="card publication">
+
+<div class="clip">
 
 <div class="clip-placeholder">
 ▶
 </div>
 
-<div class="card-content">
+</div>
+
+<div class="clip-info">
+
 <h3>Nouvel extrait</h3>
-<p>Votre premier extrait de clip apparaîtra ici.</p>
+
+<p>
+Artiste à découvrir
+</p>
+
+<div class="stats">
+
+<div class="stat">
+👁️ <span class="view-count">0</span> vues
+</div>
+
+<button class="like-btn"
+        onclick="likePost(this)">
+❤️ J’aime
+</button>
+
+<div class="stat">
+<span class="like-count">0</span>
+</div>
+
+</div>
+
 </div>
 
 </article>
 
 
-<article class="card">
+<!-- PUBLICATION 2 -->
+
+<article class="card publication">
+
+<div class="clip">
 
 <div class="clip-placeholder">
 ▶
 </div>
 
-<div class="card-content">
-<h3>Artiste à découvrir</h3>
-<p>Un nouvel extrait sera bientôt disponible.</p>
+</div>
+
+<div class="clip-info">
+
+<h3>Extrait du moment</h3>
+
+<p>
+La sélection Voix Média Promo 242
+</p>
+
+<div class="stats">
+
+<div class="stat">
+👁️ <span class="view-count">0</span> vues
+</div>
+
+<button class="like-btn"
+        onclick="likePost(this)">
+❤️ J’aime
+</button>
+
+<div class="stat">
+<span class="like-count">0</span>
+</div>
+
+</div>
+
 </div>
 
 </article>
 
 
-<article class="card">
+<!-- PUBLICATION 3 -->
+
+<article class="card publication">
+
+<div class="clip">
 
 <div class="clip-placeholder">
 ▶
 </div>
 
-<div class="card-content">
-<h3>La sélection 242</h3>
-<p>Les extraits mis en avant par votre média.</p>
+</div>
+
+<div class="clip-info">
+
+<h3>La découverte 242</h3>
+
+<p>
+Un nouvel extrait bientôt disponible
+</p>
+
+<div class="stats">
+
+<div class="stat">
+👁️ <span class="view-count">0</span> vues
+</div>
+
+<button class="like-btn"
+        onclick="likePost(this)">
+❤️ J’aime
+</button>
+
+<div class="stat">
+<span class="like-count">0</span>
+</div>
+
+</div>
+
 </div>
 
 </article>
 
+
 </div>
+
 </section>
 
 
 <!-- ARTISTES -->
+
 <section id="artistes">
 
-<h2 class="title">Nos <span>artistes</span></h2>
+<h2 class="title">
+Nos <span>artistes</span>
+</h2>
 
 <p class="desc">
-Découvrez les talents mis en avant par Voix Média Promo 242.
+Les talents mis en avant par Voix Média Promo 242.
 </p>
 
 <div class="grid">
 
 <div class="card artist">
-<div class="artist-icon">🎤</div>
+
+<div class="artist-icon">
+🎤
+</div>
+
 <h3>Artiste 1</h3>
-<p>Artiste à découvrir</p>
+
+<p>
+Artiste à découvrir
+</p>
+
 </div>
 
+
 <div class="card artist">
-<div class="artist-icon">🎵</div>
+
+<div class="artist-icon">
+🎵
+</div>
+
 <h3>Artiste 2</h3>
-<p>Nouvelle découverte</p>
+
+<p>
+Nouvelle découverte
+</p>
+
 </div>
+
 
 <div class="card artist">
-<div class="artist-icon">⭐</div>
+
+<div class="artist-icon">
+⭐
+</div>
+
 <h3>Artiste 3</h3>
-<p>Talent du 242</p>
+
+<p>
+Talent du 242
+</p>
+
 </div>
 
 </div>
+
 </section>
 
 
 <!-- EVENEMENTS -->
+
 <section id="evenements">
 
-<h2 class="title">Événements <span>à venir</span></h2>
+<h2 class="title">
+Événements <span>à venir</span>
+</h2>
 
 <p class="desc">
-Retrouvez les événements présentés par Voix Média Promo 242.
+Retrouvez les événements présentés par
+Voix Média Promo 242.
 </p>
 
 <div class="grid">
 
+
 <article class="card event">
 
-<div class="event-date">À VENIR</div>
+<div class="event-date">
+À VENIR
+</div>
 
-<h3>Votre événement</h3>
+<h3>
+Votre événement
+</h3>
 
 <div class="event-location">
 📍 Brazzaville
@@ -464,14 +793,35 @@ Retrouvez les événements présentés par Voix Média Promo 242.
 Les informations de l'événement seront publiées ici.
 </p>
 
+<div class="stats">
+
+<div class="stat">
+👁️ <span class="view-count">0</span> vues
+</div>
+
+<button class="like-btn"
+        onclick="likePost(this)">
+❤️ J’aime
+</button>
+
+<div class="stat">
+<span class="like-count">0</span>
+</div>
+
+</div>
+
 </article>
 
 
 <article class="card event">
 
-<div class="event-date">PROMOTION</div>
+<div class="event-date">
+PROMOTION
+</div>
 
-<h3>Événement partenaire</h3>
+<h3>
+Événement partenaire
+</h3>
 
 <div class="event-location">
 📍 Congo
@@ -481,13 +831,33 @@ Les informations de l'événement seront publiées ici.
 Faites connaître votre événement à notre communauté.
 </p>
 
-</article>
+<div class="stats">
+
+<div class="stat">
+👁️ <span class="view-count">0</span> vues
+</div>
+
+<button class="like-btn"
+        onclick="likePost(this)">
+❤️ J’aime
+</button>
+
+<div class="stat">
+<span class="like-count">0</span>
+</div>
 
 </div>
+
+</article>
+
+
+</div>
+
 </section>
 
 
 <!-- PROMOTION CLIENT -->
+
 <section id="promotion">
 
 <div class="promo">
@@ -498,76 +868,122 @@ Faites promouvoir votre <span>événement</span>
 
 <p class="desc">
 Vous êtes artiste, organisateur, entreprise ou porteur
-de projet ? Confiez votre visibilité à Voix Média Promo 242.
+de projet ? Voix Média Promo 242 vous accompagne
+pour votre visibilité.
 </p>
 
 <div class="price">
-4 000 FCFA <small>/ mois</small>
+4 000 FCFA
+<small>/ mois</small>
 </div>
 
 <ul>
-<li>Promotion de votre événement</li>
-<li>Mise en avant sur la plateforme</li>
-<li>Visibilité auprès de notre communauté</li>
-<li>Tarif modifiable au fil du temps</li>
+
+<li>
+Promotion de votre événement
+</li>
+
+<li>
+Mise en avant sur la plateforme
+</li>
+
+<li>
+Visibilité auprès de notre communauté
+</li>
+
+<li>
+Tarif modifiable au fil du temps
+</li>
+
 </ul>
 
 <a
-href="https://wa.me/242065826884?text=Bonjour%20Voix%20Média%20Promo%20242%2C%20je%20souhaite%20promouvoir%20mon%20événement."
+href="https://wa.me/242065826884"
 target="_blank"
 class="btn primary">
+
 Contacter sur WhatsApp
+
 </a>
 
 </div>
+
 </section>
 
 
 <!-- REFERENCES -->
+
 <section id="references">
 
-<h2 class="title">Nos <span>références</span></h2>
+<h2 class="title">
+Nos <span>références</span>
+</h2>
 
 <p class="desc">
-Quelques domaines dans lesquels Voix Média Promo 242
-accompagne ses partenaires.
+Les domaines dans lesquels Voix Média Promo 242
+peut accompagner ses partenaires.
 </p>
 
 <div class="grid">
 
 <div class="card reference">
-<strong>🎤 Artistes</strong>
+
+<strong>
+🎤 Artistes
+</strong>
+
 <p>
 Promotion des artistes, sorties musicales et projets.
 </p>
+
 </div>
 
+
 <div class="card reference">
-<strong>📅 Événements</strong>
+
+<strong>
+📅 Événements
+</strong>
+
 <p>
 Concerts, spectacles, soirées et rendez-vous culturels.
 </p>
+
 </div>
 
+
 <div class="card reference">
-<strong>🏢 Entreprises</strong>
+
+<strong>
+🏢 Entreprises
+</strong>
+
 <p>
-Visibilité et communication pour les marques et entreprises.
+Visibilité et communication pour les entreprises.
 </p>
+
 </div>
 
+
 <div class="card reference">
-<strong>📢 Publicité</strong>
+
+<strong>
+📢 Publicité
+</strong>
+
 <p>
 Campagnes de promotion adaptées à vos objectifs.
 </p>
+
 </div>
 
 </div>
+
 </section>
 
 
-<!-- ABONNEMENT -->
+<!-- ABONNEMENT PUBLIC -->
+
 <section id="abonnement">
 
 <div class="subscribe">
@@ -577,12 +993,16 @@ Restez <span>informé</span>
 </h2>
 
 <p>
-Abonnez-vous gratuitement pour recevoir les notifications
+Abonnez-vous gratuitement pour être informé
 des nouveaux contenus et événements.
 </p>
 
-<button class="btn primary" onclick="subscribe()">
-🔔 S'abonner aux notifications
+<button
+class="btn primary"
+onclick="subscribe()">
+
+🔔 S'abonner
+
 </button>
 
 <div id="message"></div>
@@ -593,6 +1013,7 @@ des nouveaux contenus et événements.
 
 
 <!-- CONTACT -->
+
 <section id="contact">
 
 <div class="contact">
@@ -602,15 +1023,16 @@ Contactez <span>Voix Média Promo 242</span>
 </h2>
 
 <p class="desc">
-Pour une promotion, une collaboration ou un événement,
-contactez-nous directement.
+Promotion, publicité, collaboration ou événement.
 </p>
 
 <a
 href="https://wa.me/242065826884"
 target="_blank"
 class="whatsapp">
-WhatsApp : 06 582 68 84
+
+WhatsApp
+
 </a>
 
 </div>
@@ -618,7 +1040,8 @@ WhatsApp : 06 582 68 84
 </section>
 
 
-<!-- ADMIN -->
+<!-- ADMINISTRATION -->
+
 <div class="admin">
 
 <a href="admin.html">
@@ -627,6 +1050,8 @@ Accès administration
 
 </div>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -637,22 +1062,20 @@ alt="Voix Média Promo 242">
 
 <div class="socials">
 
-<a
-href="https://www.tiktok.com/@voixcongo242"
-target="_blank">
-TikTok
+<a href="#accueil">
+Accueil
 </a>
 
-<a
-href="https://www.instagram.com/voixmedia242"
-target="_blank">
-Instagram
+<a href="#clips">
+Clips
 </a>
 
-<a
-href="https://wa.me/242065826884"
-target="_blank">
-WhatsApp
+<a href="#evenements">
+Événements
+</a>
+
+<a href="#contact">
+Contact
 </a>
 
 </div>
@@ -666,33 +1089,182 @@ WhatsApp
 
 <script>
 
-function subscribe(){
+/* =========================
+   IDENTIFICATION DES POSTS
+========================= */
 
-const message=document.getElementById("message");
+const publications =
+document.querySelectorAll(".publication, .event");
 
-if(!("Notification" in window)){
 
-message.textContent=
-"Les notifications ne sont pas disponibles sur ce navigateur.";
+/* =========================
+   VUES
+========================= */
 
-return;
-}
+publications.forEach(function(post,index){
 
-Notification.requestPermission().then(function(permission){
+  const viewElement =
+  post.querySelector(".view-count");
 
-if(permission==="granted"){
+  const key =
+  "voix_views_" + index;
 
-message.textContent=
-"Vous êtes abonné aux notifications de Voix Média Promo 242.";
+  let views =
+  parseInt(localStorage.getItem(key)) || 0;
 
-}else{
+  /*
+   Une vue est enregistrée lorsque
+   la publication est ouverte/visible.
+  */
 
-message.textContent=
-"Les notifications sont désactivées sur cet appareil.";
-
-}
+  if(viewElement){
+    viewElement.textContent = views;
+  }
 
 });
+
+
+/* =========================
+   J'AIME
+========================= */
+
+function likePost(button){
+
+  const post =
+  button.closest(".publication, .event");
+
+  if(!post){
+    return;
+  }
+
+  const allPosts =
+  Array.from(publications);
+
+  const index =
+  allPosts.indexOf(post);
+
+  const key =
+  "voix_likes_" + index;
+
+  const likedKey =
+  "voix_liked_" + index;
+
+  let likes =
+  parseInt(localStorage.getItem(key)) || 0;
+
+  const alreadyLiked =
+  localStorage.getItem(likedKey) === "yes";
+
+  if(alreadyLiked){
+
+    button.classList.remove("liked");
+    button.innerHTML = "❤️ J’aime";
+
+    localStorage.removeItem(likedKey);
+
+    likes = Math.max(0,likes - 1);
+
+  }else{
+
+    button.classList.add("liked");
+    button.innerHTML = "❤️ J’aime ✓";
+
+    localStorage.setItem(likedKey,"yes");
+
+    likes++;
+
+  }
+
+  localStorage.setItem(key,likes);
+
+  const count =
+  post.querySelector(".like-count");
+
+  if(count){
+    count.textContent = likes;
+  }
+
+}
+
+
+/* =========================
+   CHARGER LES J'AIME
+========================= */
+
+publications.forEach(function(post,index){
+
+  const likeCount =
+  post.querySelector(".like-count");
+
+  const button =
+  post.querySelector(".like-btn");
+
+  const key =
+  "voix_likes_" + index;
+
+  const likedKey =
+  "voix_liked_" + index;
+
+  const likes =
+  parseInt(localStorage.getItem(key)) || 0;
+
+  const liked =
+  localStorage.getItem(likedKey) === "yes";
+
+  if(likeCount){
+    likeCount.textContent = likes;
+  }
+
+  if(button && liked){
+
+    button.classList.add("liked");
+
+    button.innerHTML =
+    "❤️ J’aime ✓";
+
+  }
+
+});
+
+
+/* =========================
+   ABONNEMENT
+========================= */
+
+function subscribe(){
+
+  const message =
+  document.getElementById("message");
+
+  if(!("Notification" in window)){
+
+    message.textContent =
+    "Les notifications ne sont pas disponibles sur cet appareil.";
+
+    return;
+  }
+
+  Notification.requestPermission()
+  .then(function(permission){
+
+    if(permission === "granted"){
+
+      localStorage.setItem(
+        "voix_abonne",
+        "yes"
+      );
+
+      message.textContent =
+      "Vous êtes maintenant abonné aux notifications.";
+
+    }else{
+
+      message.textContent =
+      "Les notifications sont désactivées.";
+
+    }
+
+  });
 
 }
 
